@@ -18,7 +18,20 @@ const pollIntervalMs = 3000;
 const maxPollAttempts = 12;
 const allowedOrigins = (process.env.FRONTEND_ORIGIN || '')
   .split(',').map((origin) => origin.trim()).filter(Boolean);
-const databasePath = path.resolve(__dirname, process.env.DATABASE_PATH || 'data/imei-checker.sqlite');
+const isServerlessRuntime = Boolean(
+  process.env.VERCEL
+  || process.env.VERCEL_ENV
+  || process.env.LAMBDA_TASK_ROOT
+  || process.env.AWS_LAMBDA_FUNCTION_NAME
+  || __dirname.startsWith('/var/task')
+);
+const configuredDatabasePath = process.env.DATABASE_PATH;
+const defaultDatabasePath = isServerlessRuntime
+  ? '/tmp/imei-checker.sqlite'
+  : path.join(__dirname, 'data/imei-checker.sqlite');
+const useConfiguredPath = !isServerlessRuntime
+  || (configuredDatabasePath && path.isAbsolute(configuredDatabasePath) && configuredDatabasePath.startsWith('/tmp/'));
+const databasePath = path.resolve(useConfiguredPath && configuredDatabasePath ? configuredDatabasePath : defaultDatabasePath);
 fs.mkdirSync(path.dirname(databasePath), { recursive: true });
 const database = new Database(databasePath);
 database.pragma('journal_mode = WAL');
@@ -420,4 +433,8 @@ app.use((error, _req, res, _next) => {
   return res.status(500).json({ success: false, error: 'An unexpected server error occurred.' });
 });
 
-app.listen(port, () => console.log(`Boardroom lookup app listening on port ${port}`));
+// Vercel invokes the exported Express application as a serverless function.
+module.exports = app;
+if (!process.env.VERCEL) {
+  app.listen(port, () => console.log(`Boardroom lookup app listening on port ${port}`));
+}

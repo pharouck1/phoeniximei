@@ -76,5 +76,6 @@ Configure `IMEI_WEBHOOK_SECRET` in `.env` and in the provider webhook settings. 
 - Terminate HTTPS at a trusted reverse proxy. Set `TRUST_PROXY=true` only when the app is behind a single trusted proxy so rate limits use the client IP correctly.
 - Set `NODE_ENV=production` and `FRONTEND_ORIGIN` to the exact browser origin when hosting the frontend separately. For a same-origin deployment, leave `FRONTEND_ORIGIN` blank.
 - Keep `.env` out of version control and inject secrets through the deployment secret manager.
+- On Vercel, the app exports its Express handler and uses `/tmp/imei-checker.sqlite` so function startup does not try writing into the read-only deployment bundle. Vercel temporary storage is not durable or shared between function instances; use a managed database before relying on order history or webhook updates in production. Vercel serves files from `public/` as static assets.
 - The service is independent and not affiliated with or endorsed by Apple Inc. Check only devices you own or are authorized to inspect. Provider results and field coverage depend on the provider.
 # phoeniximei

@@ -3,80 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101714">
-  <meta name="description" content="Precision iPhone IMEI and serial verification for repair professionals.">
-  <title>Boardroom — iPhone Identity Check</title>
+  <meta name="theme-color" content="#0b0f17">
+  <meta name="description" content="Precision iPhone identity checks for independent repair professionals.">
+  <title>Phoenix Tech — Device intelligence for repair pros</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="Boardroom home"><span class="brand-mark">B<span>+</span></span><span>boardroom<span class="brand-sub">MICROSOLDERING LAB</span></span></a>
-      <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#bench">The bench</a><a class="nav-button" href="#checker">Check a device <span>↗</span></a></nav>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </header>
+  <header class="topbar">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Phoenix Tech home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M12 23V9h5.3c3.3 0 5.1 1.6 5.1 4s-1.8 4-5.1 4H12"/></svg></span>
+        <span class="brand-name">Phoenix Tech<span class="brand-sub">MICROSOLDERING LAB</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#expertise">Expertise</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="nav-cta" href="#checker">Check a device <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow"><i></i> DEVICE INTELLIGENCE / 001</div>
-          <h1>Know what’s<br>on your <em>bench.</em></h1>
-          <p class="hero-intro">A precision IMEI check for iPhone repair pros. Verify device identity before the first probe touches the board.</p>
-          <a class="primary-link" href="#checker">Run a device check <span>↓</span></a>
-          <div class="hero-footnote"><span class="tiny-cross">✳</span> BUILT FOR THE PEOPLE WHO FIX WHAT OTHERS CAN’T</div>
+  <main id="top">
+    <section class="hero content-width">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-pulse"></span> DEVICE INTELLIGENCE <span class="eyebrow-rule"></span> 001</div>
+        <h1>Know the device<br>before the <span>first probe.</span></h1>
+        <p class="hero-intro">A sharper start to every repair. Verify an iPhone’s identity and available device details before it reaches your microsoldering bench.</p>
+        <div class="hero-actions">
+          <a class="text-link" href="#how">Explore the process <span aria-hidden="true">↓</span></a>
+          <span class="action-note"><i></i> Built for independent repair labs</span>
         </div>
-        <div class="hero-visual" id="bench" aria-label="Microsoldering circuit board illustration">
-          <div class="visual-label label-top"><span>BOARD VIEW</span><span>01—16</span></div>
-          <div class="board-grid"></div>
-          <svg class="board-art" viewBox="0 0 600 500" role="img" aria-label="Illustrated logic board with circuit traces">
-            <defs><linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#253b2d"/><stop offset="1" stop-color="#14231c"/></linearGradient><pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#a2bb8c" opacity=".28"/></pattern></defs>
-            <path d="M100 98h380a24 24 0 0 1 24 24v250a24 24 0 0 1-24 24H100a24 24 0 0 1-24-24V122a24 24 0 0 1 24-24Z" fill="url(#pcb)" stroke="#789066" stroke-width="2"/>
-            <path d="M100 98h380a24 24 0 0 1 24 24v250a24 24 0 0 1-24 24H100a24 24 0 0 1-24-24V122a24 24 0 0 1 24-24Z" fill="url(#dots)"/>
-            <g fill="none" stroke="#a9c58d" stroke-width="2" opacity=".8"><path d="M76 180h68l30 30h55M76 240h55l28-28h43M76 318h88l34-34h33M524 160h-60l-34 34h-30M524 268h-72l-26 26h-52M524 342h-78l-35-35h-38"/><path d="M132 98v-34h60M242 98V50h38M400 98V64h58M143 396v42h60M340 396v34h74M472 396v32h30"/><path d="M76 150H42v-28M524 214h34v-37M524 320h40v28"/></g>
-            <g fill="#d7dec7"><circle cx="76" cy="180" r="4"/><circle cx="76" cy="240" r="4"/><circle cx="76" cy="318" r="4"/><circle cx="524" cy="160" r="4"/><circle cx="524" cy="268" r="4"/><circle cx="524" cy="342" r="4"/><circle cx="132" cy="98" r="4"/><circle cx="242" cy="98" r="4"/><circle cx="400" cy="98" r="4"/></g>
-            <rect x="217" y="180" width="172" height="146" rx="12" fill="#111714" stroke="#d5dbb9" stroke-width="2"/><rect x="231" y="194" width="144" height="118" rx="5" fill="#19211b" stroke="#607451"/><text x="303" y="245" text-anchor="middle" fill="#aabd8d" font-family="monospace" font-size="11" letter-spacing="3">LOGIC</text><text x="303" y="268" text-anchor="middle" fill="#e3e9d4" font-family="monospace" font-size="14" letter-spacing="2">A15 · 2022</text>
-            <g fill="#c6ccad"><rect x="185" y="190" width="17" height="13" rx="2"/><rect x="185" y="215" width="17" height="13" rx="2"/><rect x="185" y="240" width="17" height="13" rx="2"/><rect x="185" y="265" width="17" height="13" rx="2"/><rect x="185" y="290" width="17" height="13" rx="2"/><rect x="404" y="190" width="17" height="13" rx="2"/><rect x="404" y="215" width="17" height="13" rx="2"/><rect x="404" y="240" width="17" height="13" rx="2"/><rect x="404" y="265" width="17" height="13" rx="2"/><rect x="404" y="290" width="17" height="13" rx="2"/></g>
-            <path d="M348 90 472 22" stroke="#e6bd7b" stroke-width="5" stroke-linecap="round"/><path d="m466 22 16-7-7 16" fill="#e6bd7b"/><circle cx="350" cy="90" r="8" fill="#f1d399"/>
-            <circle cx="464" cy="122" r="3" fill="#edbc6a"/><circle cx="464" cy="372" r="3" fill="#edbc6a"/><circle cx="100" cy="372" r="3" fill="#edbc6a"/>
-          </svg>
-          <div class="visual-label label-bottom"><span>FIG. 01 / IPHONE LOGIC BOARD</span><span>PROBE READY <i class="pulse"></i></span></div>
-          <div class="floating-tag"><span class="tag-icon">⌁</span><span><b>PRECISION FIRST</b><small>VERIFY BEFORE REPAIR</small></span></div>
-          <div class="crosshair c1">+</div><div class="crosshair c2">+</div>
+        <div class="hero-trust"><span class="trust-icon">⌁</span><span>Provider credentials stay on the server</span><span class="trust-sep"></span><span>15-digit IMEI validation</span></div>
+      </div>
+
+      <div class="hero-art" id="bench" aria-label="Microsoldering logic board illustration">
+        <div class="art-glow"></div>
+        <div class="art-grid"></div>
+        <div class="art-topline"><span><i></i> BENCH / DIAGNOSTICS</span><span>01—16</span></div>
+        <svg class="board-art" viewBox="0 0 680 520" role="img" aria-label="Logic board circuit diagram">
+          <defs>
+            <linearGradient id="board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1c2a37"/><stop offset="1" stop-color="#101923"/></linearGradient>
+            <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#202e3c"/><stop offset="1" stop-color="#111a24"/></linearGradient>
+            <pattern id="pins" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#8ca0b4" opacity=".3"/></pattern>
+          </defs>
+          <path d="M149 90h380a24 24 0 0 1 24 24v290a24 24 0 0 1-24 24H149a24 24 0 0 1-24-24V114a24 24 0 0 1 24-24Z" fill="url(#board)" stroke="#46576a" stroke-width="2"/>
+          <path d="M149 90h380a24 24 0 0 1 24 24v290a24 24 0 0 1-24 24H149a24 24 0 0 1-24-24V114a24 24 0 0 1 24-24Z" fill="url(#pins)"/>
+          <g fill="none" stroke="#5e7690" stroke-width="2" opacity=".8"><path d="M125 158H74l-22 22H20m105 32H86l-24 24H20m105 61H69l-25 25H20m105 58H73l-22 22H20M557 142h56l25 25h22m-103 65h55l24 24h22m-103 62h50l28 28h22m-102 50h55l22 22h22"/><path d="M190 90V50h58M302 90V37h28m106 53V54h52M213 428v51h64m92-51v48h52m74-48v37h54"/></g>
+          <g fill="#9aacc0"><circle cx="20" cy="180" r="4"/><circle cx="20" cy="234" r="4"/><circle cx="20" cy="300" r="4"/><circle cx="20" cy="358" r="4"/><circle cx="660" cy="167" r="4"/><circle cx="660" cy="255" r="4"/><circle cx="660" cy="321" r="4"/><circle cx="660" cy="371" r="4"/></g>
+          <rect x="246" y="155" width="188" height="200" rx="13" fill="#0b1119" stroke="#77889a" stroke-width="2"/>
+          <rect x="260" y="169" width="160" height="172" rx="7" fill="url(#chip)" stroke="#344657"/>
+          <rect x="260" y="169" width="160" height="172" rx="7" fill="url(#pins)" opacity=".55"/>
+          <path d="M282 205h116M282 221h70M282 291h94" stroke="#39d0bf" stroke-width="2" opacity=".76"/>
+          <circle cx="392" cy="221" r="4" fill="#39d0bf"/><circle cx="365" cy="291" r="4" fill="#f4b869"/>
+          <text x="340" y="260" text-anchor="middle" fill="#ecf2f7" font-family="monospace" font-size="22" letter-spacing="4">BOARD</text>
+          <text x="340" y="319" text-anchor="middle" fill="#8da0b4" font-family="monospace" font-size="9" letter-spacing="2">IDENTITY / VERIFIED</text>
+          <g fill="#8296a9"><rect x="219" y="174" width="16" height="10" rx="2"/><rect x="219" y="193" width="16" height="10" rx="2"/><rect x="219" y="212" width="16" height="10" rx="2"/><rect x="219" y="231" width="16" height="10" rx="2"/><rect x="219" y="250" width="16" height="10" rx="2"/><rect x="219" y="269" width="16" height="10" rx="2"/><rect x="219" y="288" width="16" height="10" rx="2"/><rect x="219" y="307" width="16" height="10" rx="2"/><rect x="445" y="174" width="16" height="10" rx="2"/><rect x="445" y="193" width="16" height="10" rx="2"/><rect x="445" y="212" width="16" height="10" rx="2"/><rect x="445" y="231" width="16" height="10" rx="2"/><rect x="445" y="250" width="16" height="10" rx="2"/><rect x="445" y="269" width="16" height="10" rx="2"/><rect x="445" y="288" width="16" height="10" rx="2"/><rect x="445" y="307" width="16" height="10" rx="2"/></g>
+        </svg>
+        <div class="art-corner corner-a">+</div><div class="art-corner corner-b">+</div>
+        <div class="art-tag"><span class="tag-symbol">◉</span><span><b>IDENTITY CHECK</b><small>PRECISION BEFORE REPAIR</small></span><span class="tag-live"><i></i></span></div>
+        <div class="art-footline"><span>FIG. 01 / IPHONE LOGIC BOARD</span><span>DIAGNOSTIC VIEW <i></i></span></div>
+      </div>
+
+      <form class="checker-card" id="imei-form" novalidate>
+        <div class="card-heading"><div><span class="card-kicker">QUICK DEVICE CHECK</span><h2>Start with the IMEI.</h2></div><span class="card-index">01</span></div>
+        <label for="imei">DEVICE IMEI <span>15 DIGITS</span></label>
+        <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌗</span><input id="imei" name="imei" type="text" inputmode="numeric" autocomplete="off" maxlength="15" placeholder="ENTER YOUR IMEI" aria-describedby="imei-hint imei-error"><button type="button" class="paste-button" id="paste">PASTE</button></div>
+        <div class="form-meta"><span id="imei-hint">Find it in Settings › General › About</span><span id="char-count">00 / 15</span></div>
+        <p class="error-message" id="imei-error" role="alert"></p>
+        <button class="submit-button" type="submit" id="submit-button"><span class="button-label">Check device</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+        <div class="secure-note"><span aria-hidden="true">⌑</span> Secure provider connection <span class="secure-dot"></span></div>
+        <p class="credit-note">The selected provider service may charge credits for each lookup.</p>
+        <div class="error-callout" id="error-callout" role="alert" hidden></div>
+        <section class="device-result" id="device-result" aria-live="polite" hidden>
+          <div class="result-heading"><div><span class="result-kicker">DEVICE REPORT</span><h3 id="result-model">iPhone</h3></div><div class="device-image" aria-hidden="true">▱</div></div>
+          <dl class="result-grid">
+            <div class="serial-row"><dt>Serial number</dt><dd><span id="result-serial">—</span><button class="copy-button" id="copy-serial" type="button">Copy</button></dd></div>
+            <div><dt>Storage</dt><dd id="result-storage">—</dd></div>
+            <div><dt>Color</dt><dd id="result-color">—</dd></div>
+            <div class="lock-row"><dt>iCloud / Activation Lock</dt><dd><span class="lock-badge" id="result-lock">Unknown</span></dd></div>
+          </dl>
+          <details class="raw-details"><summary>Secondary details</summary><pre id="result-json"></pre></details>
+          <p class="result-disclaimer">Results are supplied by the configured third-party provider and may be incomplete.</p>
+        </section>
+      </form>
+    </section>
+
+    <section class="metrics content-width" aria-label="Lookup characteristics">
+      <div class="metric-intro"><span class="metric-overline">BUILT FOR THE BENCH</span><span class="metric-caption">A considered first step<br>for every device.</span></div>
+      <div class="metric"><strong>15<span> digits</span></strong><small>IMEI INPUT</small></div>
+      <div class="metric"><strong>Luhn</strong><small>CHECK DIGIT VALIDATION</small></div>
+      <div class="metric"><strong>78</strong><small>SELECTED LOOKUP SERVICE</small></div>
+      <div class="metric"><strong>Server<span>-side</span></strong><small>PROVIDER CREDENTIALS</small></div>
+    </section>
+
+    <section class="expertise content-width" id="expertise">
+      <div class="section-topline"><span class="eyebrow"><span class="eyebrow-pulse"></span> CAPABILITIES / 02</span><span class="section-note">IDENTITY BEFORE REPAIR</span></div>
+      <div class="section-heading"><h2>Clarity at the<br><span>component level.</span></h2><p>Focused identity tools for repair professionals. Each result reflects the fields available from the selected lookup service.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-number">01 / IDENTITY</div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M11 12h10M11 16h7M11 20h10M9 2v3m7-3v3m7-3v3M9 27v3m7-3v3m7-3v3M2 9h3m-3 7h3m-3 7h3m22-14h3m-3 7h3m-3 7h3"/></svg></div><h3>Device identity</h3><p>Translate a valid IMEI into the serial number and model details returned by the provider.</p><a href="#checker" aria-label="Check device identity">Explore <span>↗</span></a></article>
+        <article class="service-card"><div class="service-number">02 / PROFILE</div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5h18v22H7zM11 9h10v7H11zm0 12h3m4 0h3"/><path d="M4 9H2m2 7H2m2 7H2m28-14h-2m2 7h-2m2 7h-2"/></svg></div><h3>Device profile</h3><p>Review reported storage, finish, and other available specifications in one clean result.</p><a href="#checker" aria-label="Check device profile">Explore <span>↗</span></a></article>
+        <article class="service-card"><div class="service-number">03 / STATUS</div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 27 8v7c0 7-4.7 11.6-11 14-6.3-2.4-11-7-11-14V8l11-5Z"/><path d="m11 16 3.2 3.2L21 12"/></svg></div><h3>Lock status</h3><p>See the iCloud or Activation Lock status when that information is included in the provider’s report.</p><a href="#checker" aria-label="Check lock status">Explore <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="process" id="how">
+      <div class="process-inner content-width">
+        <div><div class="eyebrow"><span class="eyebrow-pulse"></span> THE WORKFLOW / 03</div><h2>From number<br>to <span>next move.</span></h2><p class="process-intro">A straightforward check that helps you start a repair with a clearer picture of the device.</p><a class="text-link" href="#checker">Run a device check <span aria-hidden="true">↗</span></a></div>
+        <div class="steps">
+          <article><span class="step-number">01</span><div><h3>Enter the IMEI</h3><p>Use the 15-digit number from device settings, the SIM tray, or original packaging.</p></div><span class="step-arrow">↗</span></article>
+          <article><span class="step-number">02</span><div><h3>Validate and query</h3><p>The number is checked before a request is sent through the configured lookup service.</p></div><span class="step-arrow">↗</span></article>
+          <article><span class="step-number">03</span><div><h3>Review the report</h3><p>Confirm the returned identity and available device details before proceeding at the bench.</p></div><span class="step-arrow">↗</span></article>
         </div>
-        <div class="side-index">B / 01 — 09</div>
-      </section>
+      </div>
+    </section>
 
-      <section class="checker-section" id="checker">
-        <div class="section-heading"><div class="eyebrow"><i></i> IDENTITY TERMINAL / 01</div><h2>Start with the<br><em>right number.</em></h2><p>Enter the 15-digit IMEI from the device, tray, or settings. We’ll validate it before retrieving available device details.</p></div>
-        <form class="checker-card" id="imei-form" novalidate>
-          <div class="card-top"><span>NEW LOOKUP</span><span class="status"><i></i> SYSTEM READY</span></div>
-          <label for="imei">DEVICE IMEI <span>15 DIGITS</span></label>
-          <div class="input-wrap"><span class="input-icon">⌗</span><input id="imei" name="imei" type="text" inputmode="numeric" autocomplete="off" maxlength="15" placeholder="000 000 000 000 000" aria-describedby="imei-hint imei-error"><button type="button" class="paste-button" id="paste">PASTE</button></div>
-          <div class="form-meta"><span id="imei-hint">Find it in Settings › General › About</span><span id="char-count">00 / 15</span></div>
-          <p class="error-message" id="imei-error" role="alert"></p>
-          <button class="submit-button" type="submit" id="submit-button"><span class="button-label">Check device</span><span class="button-arrow">↗</span></button>
-          <div class="secure-note"><span>⬡</span> IMEI sent securely to the configured lookup provider</div>
-          <p class="credit-note">The selected provider service may charge credits for each lookup.</p>
-          <div class="error-callout" id="error-callout" role="alert" hidden></div>
-          <section class="device-result" id="device-result" aria-live="polite" hidden>
-            <div class="result-heading"><div><span class="result-kicker">DEVICE REPORT</span><h3 id="result-model">iPhone</h3></div><div class="device-image" aria-hidden="true">▱</div></div>
-            <dl class="result-grid">
-              <div class="serial-row"><dt>Serial number</dt><dd><span id="result-serial">—</span><button class="copy-button" id="copy-serial" type="button">Copy</button></dd></div>
-              <div><dt>Storage</dt><dd id="result-storage">—</dd></div>
-              <div><dt>Color</dt><dd id="result-color">—</dd></div>
-              <div class="lock-row"><dt>iCloud / Activation Lock</dt><dd><span class="lock-badge" id="result-lock">Unknown</span></dd></div>
-            </dl>
-            <details class="raw-details"><summary>Secondary details</summary><pre id="result-json"></pre></details>
-            <p class="result-disclaimer">Results are supplied by the configured third-party data provider and may be incomplete.</p>
-          </section>
-        </form>
-      </section>
+    <section class="about-strip content-width" id="about"><span class="about-mark" aria-hidden="true">P</span><p><strong>Good diagnosis starts with good data.</strong><br>Phoenix Tech is an independent device lookup interface for microsoldering and repair professionals. Results depend on the configured provider and may be incomplete.</p><span class="about-index">NOTE / 001</span></section>
+  </main>
 
-      <section class="how-section" id="how"><div class="eyebrow"><i></i> THE PROCESS / 02</div><div class="how-grid"><h2>Bench work<br>starts <em>before</em><br>the bench.</h2><div class="steps"><article><span>01</span><div><h3>Read the IMEI</h3><p>Use the device settings, SIM tray, or original packaging to find its 15-digit identifier.</p></div><span class="step-arrow">↗</span></article><article><span>02</span><div><h3>Validate the device</h3><p>We check the number format and, with an authorized data provider connected, retrieve the linked device record.</p></div><span class="step-arrow">↗</span></article><article><span>03</span><div><h3>Repair with confidence</h3><p>Confirm the device identity before ordering parts, taking a board in, or handing a repair back.</p></div><span class="step-arrow">↗</span></article></div></div></section>
-      <section class="note-strip"><span class="note-symbol">✳</span><p><b>Good diagnosis starts with good data.</b><br>Device details depend on the configured third-party service. Missing values are shown as unavailable; this checker never guesses a serial number.</p><span class="note-code">NOTE / 001</span></section>
-    </main>
-    <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">B<span>+</span></span><span>boardroom<span class="brand-sub">MICROSOLDERING LAB</span></span></a><span>PRECISION IS A PRACTICE.</span><span class="legal-disclaimer">This service is an independent lookup tool and is not affiliated with or endorsed by Apple Inc.</span></footer>
-  </div>
+  <footer class="content-width"><a class="brand footer-brand" href="#top" aria-label="Phoenix Tech home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M12 23V9h5.3c3.3 0 5.1 1.6 5.1 4s-1.8 4-5.1 4H12"/></svg></span><span class="brand-name">Phoenix Tech<span class="brand-sub">MICROSOLDERING LAB</span></span></a><span class="footer-tag">PRECISION IS A PRACTICE.</span><span class="legal-disclaimer">Independent lookup service. Not affiliated with or endorsed by Apple Inc.</span></footer>
   <script src="/app.js" defer></script>
 </body>
 </html>
